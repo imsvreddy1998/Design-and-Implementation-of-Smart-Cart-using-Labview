@@ -5,3 +5,6 @@ In this present generation most of the people prefer to visit supermarkets and h
 
 # Purpose
 The purpose of the smart cart is as shown in below picture.
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/8090ec69-c3d6-442b-9ec0-5043a6109b26)
+

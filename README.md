@@ -96,7 +96,29 @@ This project creates a central bill and the software used for the creation of th
   <li> 
   The front panel window is the user interface for the VI. It has controls and indicators, which are the interactive input and output terminals, respectively, of the VI.</li>
    <li>
-   Controls and indicators placed on the front panel are automatically placed on the block diagram.</li>
+   The controls and indicators placed on the front panel are automatically placed on the block diagram. Front panel indicators pass data from the user to their corresponding terminals on the block diagram</li>
+  </ul>
 
+The following figure depicts the front panel of the code in LabVIEW.
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/c9341247-6ece-46d0-b159-d2d5a2efda66)
+
+<h3> Block Diagram </h3>
+<ul>
+  <li> A block diagram is a graphical representation of a system, project, or scenario. It provides a functional view of a system and illustrates how the different elements of that system interlink.</li>
+  <li>It contains the graphical source code of a LabVIEW program that defines the functionality of the VI. The blocks are interconnected, using wires to indicate the dataflow.</li>
+  In the block diagram panel, different icons and programming structures are used to develop codes as shown in below figures.
+
+  ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/68d155bb-f200-46f1-9b15-9583faaa6b9c)
+
+  ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/0569213e-97c5-4e76-87b5-72385bcb01dd)
+
+  ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/2af2a745-ae12-46e1-9c4e-3994129a08dc)
+
+  
+
+
+
+  
 
 

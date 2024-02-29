@@ -51,7 +51,7 @@ The design and implementation of the Smart Cart using LabVIEW combines advanced 
               <h3> Module Description </h3>
 
 <p align="justify">
- In the proposed, Smart Cart (Fig.1) shows the block diagram and it consists of Central server, MyRIO, Sensor, Bluetooth module, and power supply as the major blocks. All these blocks are connected as shown in fig 2. </p>
+ In the proposed, Smart Cart (Fig.1) shows the block diagram and it consists of MyRIO, Sensor, Bluetooth module, and power supply as the major blocks. All these blocks are connected as shown in fig 2. </p>
 
 ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/eef36e47-08a5-4ea5-a163-42bf6fe7f103)
 

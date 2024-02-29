@@ -190,6 +190,33 @@ The following figures shows the screens of the mobile application which shows th
 <li>Because of the central bill we don’t need to wait in the long queues to scan the products, we need to just pay the bill and unfill the cart.</li>
 </ul>
 
+## Flow of Execution
+
+The flow of execution of the mobile application is shown in the below figure.
+
+<ul>
+ <p align="justify" >
+ <li>Initially, QR code should be scanned which is assigned to each trolley. When is scanned it goes to the next screen or else the code should be scanned again.</li>
+<li> After scanning the QR Code, it goes to the next screen which is Bluetooth connection. It displays all the paired devices, and we need to connect it to our device.</li>
+<li> The Bluetooth device which we used is HC-05 Bluetooth module. When the connection is done it goes to the next screen else it displays the message as unable to connect and should try again to connect.</li>
+<li> Once the Bluetooth connection is done, the addition and deletion of products should be done where the barcode of the product of the product should be scanned for both addition and deletion of the product.</li>
+<li> Once the shopping is done, it displays the list of the products purchased for recheck and once the shopping is done, we need to go for I’m Done.</li>
+<li>After the completion of the shopping, it will generate the bill automatically and will be stored in the Central billing system database.</li></p>
+</ul>
+The following figure depicts the flow of execution of the mobile application.
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/02b6b24c-a753-4468-bf15-21b0ea4f5020)
+
+## Working
+<p align="justify"> The working module of the Smart Cart project represents the culmination of meticulous design, integration, and testing to create a seamlessly functioning system. This module encapsulates the hardware and software components working in harmony to deliver enhanced shopping experiences in supermarkets and malls. By leveraging advanced technologies such as sensors, actuators, microcontrollers, and sophisticated software algorithms, the working module embodies innovation and efficiency, promising users a glimpse into the future of retail convenience and automation.</p>
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/be1472eb-e5df-447a-9ba2-26fba52a3ed3)
+
+<p align="justify">Once the myRIO is connected with Bluetooth and PIR sensor as shown in the above figure then run the code in the LabVIEW and now the usage of Android Application comes into the picture. Initially before starting the application, we will assign the trolley id’s inbuilt in the mobile application and we need to pair the Bluetooth with the Bluetooth module which we have used i.e. <b>HC-05</b> in the mobile phone and now when application is started, first we need to scan the trolley qr code which is given identical to each trolley. Once the trolley is scanned, then the scanned id and inbuilt id’s are matched then a dialog box will be popped with a text as <b>“The Trolley is Assigned Successfully”</b> and goes to next screen otherwise if it is not matched then dialog box will be popped as <b>“The Trolley Is Not Assigned”</b> and doesn’t go to next screen and we need to scan again with a correct QR code. After the trolley is assigned, it goes to the next screen and in that screen, we need to connect the Bluetooth in which it is displayed on the left corner of the application. And we need press that Bluetooth icon in the application and there it will display the available Bluetooth devices and we need to connect it to the right device. Then if Bluetooth is connected then a dialog box is popped with a text as “Bluetooth is connected” otherwise if not connected it will display as <b>“404 Error Bluetooth is not connected”</b>.</p>
+
+<p align="justify"> Once Bluetooth is connected to the mobile application then Bluetooth module HC-05 will stop blinking the light and then we can start shopping. Bluetooth is used to pass values from mobile applications to myRIO. There will an <b>ADD</b> item or <b>DELETE</b> item will be present on the screen. PIR sensor is a motion detector, which is used for accessing or denying the request. To insert or add an item into the trolley first we need to scan the barcode present on the item then these values are passed to the myRIO and then PIR sensor starts working and it gives access to the customer to add an item to the trolley. Similarly, the same procedure is done to add an item into the trolley. In the idle case, i.e. if we want to add a item with a scanning the barcode, then the PIR sensor deny the permission to add an item.</p>
+
+<p align="justify"> When we keep a buzzer in that place then a beep sound will be heard in that situation and this PIR sensor can be used as anti-theft usage. By this theft problem can be avoided. If we want to remove or delete item from the trolley there will be a Delete item icon present on the screen and we need to scan the item again then these barcode values are passed to the myRIO and then the PIR sensor gives an access to remove an item. In this way we can do shopping through the mobile application. Once the shopping is done then there will be an icon on the screen named as <b>“END SHOPPING”</b> by pressing that we can end the shopping. The total amount will be displayed on the screen.</p>
 
 
  

@@ -27,7 +27,28 @@ The proposed system aims to revolutionize the shopping experience by introducing
 # Design and Implementation
 <p align="justify">
 The design and implementation of the Smart Cart using LabVIEW combines advanced hardware integration with sophisticated software programming. Leveraging LabVIEW's graphical programming environment, the project aims to create a seamless shopping experience by integrating features such as obstacle detection, automated navigation, and real-time data analysis. Through meticulous design and implementation, this endeavor seeks to revolutionize traditional shopping carts, offering a glimpse into the future of retail convenience and automation. The following sections discusses the block diagram and required components for this project.</p>
-                      <h6> Module Description </h6>
+
+<h3> Components Required </h3>
+
+<table>
+  <tr>
+    <th>Hardware Components</th>
+    <th>Software Components</th>
+  </tr>
+  <tr>
+    <td><ul>
+  <li>Bluetooth Module (HC-05) </li>
+  <li>PIR Sensor</li>
+  <li>NI-MyRIO</li>
+</ul></td>
+    <td><ul>
+  <li>LabVIEW </li>
+  <li>Android Studio</li>
+</ul></td>
+  </tr>
+  
+</table>
+              <h3> Module Description </h3>
 
 <p align="justify">
  In the proposed, Smart Cart (Fig.1) shows the block diagram and it consists of Central server, MyRIO, Sensor, Bluetooth module, and power supply as the major blocks. All these blocks are connected as shown in fig 2. </p>

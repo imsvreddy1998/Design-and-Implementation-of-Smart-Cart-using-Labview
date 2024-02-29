@@ -102,12 +102,17 @@ This project creates a central bill and the software used for the creation of th
 The following figure depicts the front panel of the code in LabVIEW.
 
 ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/c9341247-6ece-46d0-b159-d2d5a2efda66)
-
+<p align="justify">
+When you open a new or existing VI, the front panel window of the VI appears. The front panel
+window is the user interface for the VI. The above shown figure is an example of a front panel window.</p>
+<p align="justify">
+The front panel shows the status of the PIR sensor whether the access is granted or denied by using the Boolean indicators and the increment of the items in the list when added and the decrement of the item from the list when deleted can be seen in the numerical indicators and Read buffer is used to see the trolley name which is scanned and error in and error out are used to indicate whether there is any error present in the code or not.</p>
 <h3> Block Diagram </h3>
 <ul>
   <li> A block diagram is a graphical representation of a system, project, or scenario. It provides a functional view of a system and illustrates how the different elements of that system interlink.</li>
-  <li>It contains the graphical source code of a LabVIEW program that defines the functionality of the VI. The blocks are interconnected, using wires to indicate the dataflow.</li>
-  In the block diagram panel, different icons and programming structures are used to develop codes as shown in below figures.
+  <li>It contains the graphical source code of a LabVIEW program that defines the functionality of the VI. The blocks are interconnected, using wires to indicate the dataflow.</li></ul>
+  
+ In the below shown block diagram panel, different icons and programming structures are used to develop codes as shown in below figures.
 
   ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/68d155bb-f200-46f1-9b15-9583faaa6b9c)
 
@@ -115,7 +120,32 @@ The following figure depicts the front panel of the code in LabVIEW.
 
   ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/2af2a745-ae12-46e1-9c4e-3994129a08dc)
 
-  
+<h3>Creation of the File Path using MyRIO</h3>
+The following sections discusses the how to create File path using MyRIO.
+<ul>
+  <li> Initially for the creation of the file path we have to know the myRIO IP address. </li>
+<li> Now, open any browser and type the IP address in http format i.e http://172.22.11.2/files/ and press ENTER.</li>
+<li>Now it will ask the credentials like USER NAME and PASSWORD.<br>User name: admin </br>
+<br>Password: (press enter)</br></li>
+<li> Now Browser displays the below figure and contents of the file will be displayed and here
+we have chosen the tmp file. </li></ul>
+
+ ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/dba44c25-2c84-4f5f-9226-5bff2eae72f5)
+
+<ul>
+<li> Now go to THIS PC on desktop and right click on it and there will be an option named MAP
+NETWORK DRIVE click on it.</li>
+<li> There we can create any local drive. Here, we have chosen R drive letter and next we need
+to select the checkbox with Connect using different credentials and uncheck the Reconnect
+at Sign-in.</li>
+<li> In this we need to give the folder path i.e ip address/file/tmp and then click on ok.Then it will create the local folder.</li>
+<li> In this we need to create new excel sheet file which can be used for billing purpose.</li>
+<li>This file path is given in the block diagram figure in order to store the billing amount and the following figure depicts the central billing excel sheet.</li></ul>
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/38c1da4e-8968-476c-80c2-95cc41947e36)
+
+
+ 
 
 
 

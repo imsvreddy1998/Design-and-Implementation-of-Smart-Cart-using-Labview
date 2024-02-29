@@ -218,6 +218,20 @@ The following figure depicts the flow of execution of the mobile application.
 
 <p align="justify"> When we keep a buzzer in that place then a beep sound will be heard in that situation and this PIR sensor can be used as anti-theft usage. By this theft problem can be avoided. If we want to remove or delete item from the trolley there will be a Delete item icon present on the screen and we need to scan the item again then these barcode values are passed to the myRIO and then the PIR sensor gives an access to remove an item. In this way we can do shopping through the mobile application. Once the shopping is done then there will be an icon on the screen named as <b>“END SHOPPING”</b> by pressing that we can end the shopping. The total amount will be displayed on the screen.</p>
 
+## Results
+
+<p align="justify"> The project successfully demonstrated the possibility of developing a Smart Shopping System which automates the entire billing procedure. The developed system which is highly reliable, fair and cost-effective. It is reliable and fair because no complex connections are present.</p>
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/3f5c805c-3b7b-4b28-9fa5-1e16a20be16b)
+
+## Conclusions
+
+<p align="justify" > Considering the changing trend in retail shopping, we come to a conclusion that the smart shopping cart is most certainly a definite necessity for the Retail marketing industry to step up their portfolios, cope up with the advancement in technology and save time and manpower. The smart shopping trolley application creates an automated central billing system for supermarkets and malls.</p>
+
+<p align="justify"> Using this product customers will not have to wait near cash counters for their bill payment. Since their purchased product information is transferred to the central billing system. The system proposed is highly dependable, authentic, trustworthy and time effective. There will be a reduction in the salary amount given to employees, reduction in theft. Also, the system is very time efficient. The developed product is easy to use, economical and does not require any special training. </p>
+
+<p align="justify">The smart shopping cart is effortless to use, affordable price and do not need any special tutorials. The proposed system is obviously required for the real time marketing organizations to set up within the advancement technology, save time and man power. It generatesacomputerized central billing system for supermarkets. With the help of smart cart application customers will make the bill payment at the counters. Consequently, their products information is directly fetched to computerized central billing system.</p>
+
 
  
 

@@ -71,13 +71,32 @@ The design and implementation of the Smart Cart using LabVIEW combines advanced 
 <b>Android Studio:</b> Android Studio is the official Integrated Development Environment (IDE) for Android app development, providing a comprehensive suite of tools for designing, building, and testing Android applications. In this project, Android Studio is used to develop the mobile application that interfaces with the smart cart, allowing users to control the cart, scan products, and view real-time updates on their Android devices.</p>
    </li>
   </ul>
-<h3> System Architecture Block Diagram  </h3>
+<h3> System Design and Architecture  </h3>
 <p align="justify">
+ The system design and architecture of the Smart Cart project form the backbone of its functionality and performance. It encompasses the interconnection and interaction between various hardware and software components, ensuring seamless operation and efficient communication.</p>
+ <p align="justify">
  In the proposed, Smart Cart (Fig.1) shows the block diagram and it consists of MyRIO, Sensor, Bluetooth module, and power supply as the major blocks. All these blocks are connected as shown in fig 2. </p>
 
 ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/eef36e47-08a5-4ea5-a163-42bf6fe7f103)
 
 ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/7aa44adf-db56-45b9-9713-cd4f6b955406)
+
+## Methodology
+<p align="justify">
+The first part of the module is to store trolley ID, so the Bluetooth module is set to read state and when Bluetooth is connected to the application it receives a message <b>“Trolley”</b>, with that shopping starts and whenever item is added using app, MyRIO receives ID’s to store the items added to the cart by comparing ID’s. Best part is security whenever the item is added; MyRio gives a chance to put a hand in it.</p> 
+<p align="justify">
+PIR detects the motion of the object where the access will be granted only when the barcode of the item is scanned either for adding item or deleting item and for all other cases access will be denied to add item or delete item. So, when the shopping is done, for verification, the checkout phase starts where the customer removes all the items from the basket by using PIR. Finally at the end of the shopping, Billing is automatically done and the bill is stored in the database.</p>
+
+## Working Principle
+<b> Working Module using LabVIEW Tool</b> 
+
+This project creates a central bill and the software used for the creation of the bill and displaying of data is by using LabVIEW. Interestingly, LabVIEW is consisted of Front panel and Block Diagram Window. 
+<h3> Front Panel </h3>
+  <ul>
+  <li> 
+  The front panel window is the user interface for the VI. It has controls and indicators, which are the interactive input and output terminals, respectively, of the VI.</li>
+   <li>
+   Controls and indicators placed on the front panel are automatically placed on the block diagram.</li>
 
 
 

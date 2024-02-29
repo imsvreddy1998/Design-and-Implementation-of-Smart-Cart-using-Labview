@@ -88,7 +88,7 @@ The first part of the module is to store trolley ID, so the Bluetooth module is 
 PIR detects the motion of the object where the access will be granted only when the barcode of the item is scanned either for adding item or deleting item and for all other cases access will be denied to add item or delete item. So, when the shopping is done, for verification, the checkout phase starts where the customer removes all the items from the basket by using PIR. Finally at the end of the shopping, Billing is automatically done and the bill is stored in the database.</p>
 
 ## Working Principle
-<b> Working Module using LabVIEW Tool</b> 
+<b> 1. Working Module using LabVIEW Tool</b> 
 
 This project creates a central bill and the software used for the creation of the bill and displaying of data is by using LabVIEW. Interestingly, LabVIEW is consisted of Front panel and Block Diagram Window. 
 <h3> Front Panel </h3>
@@ -143,6 +143,53 @@ at Sign-in.</li>
 <li>This file path is given in the block diagram figure in order to store the billing amount and the following figure depicts the central billing excel sheet.</li></ul>
 
 ![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/38c1da4e-8968-476c-80c2-95cc41947e36)
+
+<b> 2. Working Module using Mobile Application </b> 
+<ul>
+<li>Initially, We need to store the unique trolley ID’s and these ID’s are assigned to their respective trolleys.</li>
+<li>There must be a inbuilt scanner or you need to download an application to support the barcode and QR code.</li>
+<li>Secondly, We need to download the SMART CART application in order to proceed further shopping.</li>
+<li>As shown in the below figure, Press the scan trolley button and scan the unique QR code which is assigned to their respective trolley.</li></ul>
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/f818c534-7c8a-4617-8316-db292bbe2108)
+
+<ul>
+<li>When the trolley id and QR code of the trolley are matched then, then the dialog box will open with text as <b>“The Trolley Is Assigned Successfully”</b> otherwise there will get an text as <b>“The Trolley Is Not Assigned”.</b></li>
+<li>Next after trolley id are matched then it goes to next screen and there we need to connect the Bluetooth.</li>
+<li>After connecting to the Bluetooth only we can do the shopping otherwise, there will a dialog box raised with a text <b>“ERROR connecting”</b>.</li>
+<li>Next after trolley id are matched then it goes to next screen and there we need to connect the Bluetooth.</li>
+<li>As shown in the below figure, the available paired devices will be shown on the display. The Bluetooth module we used is HC-05 Bluetooth module.</li></ul>
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/dbf333a9-56de-4a99-a151-4565aae5ecc4)
+
+<ul>
+ <li>After connecting to Bluetooth only we can continue with the further shopping otherwise, there will a dialog box raised with a text “ERROR connecting” and we cannot proceed with our shopping.</li>
+</ul>
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/e4cf5249-757d-417e-91f9-799109a766bd)
+
+<ul>
+ <li>After Bluetooth is connected, As shown in the above figure there will be two options i.e ADD or DELETE.</li>
+ <li>When we press on the add or delete button, we need to scan the product barcode to add or delete the item from the list.</li>
+ <li>Whenever a product is added or deleted using an app, myRIO receives IDs to store the added or deleted products to the cart by comparing IDs.</li>
+ <li>The best part is security, whenever the product is added or subtracted, myRIO gives access to put a hand in it for some time, to add the product or to take the product from the Cart.</li>
+ <li>PIR detects the motion of the object where the access will be granted only when the barcode of the item is scanned either for adding product or deleting product and for all other cases access will be denied adding product or deleting product.</li>
+</ul>
+
+The following figures shows the screens of the mobile application which shows the shopping bill and total number of items in the cart.
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/871dface-2240-4677-b79b-03b4d44b72a7)
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/ac54f8c0-e6d2-4df9-9662-86f0290802af)
+
+![image](https://github.com/imsvreddy1998/Design-and-Implementation-of-Smart-Cart-using-Labview/assets/124395648/68f32c68-7b3c-4793-8834-69872079d408)
+
+<ul>
+ <li>After the addition and deletion of the items, Press I’m done, and the total amount and the items quantity will be displayed to check the items.</li>
+<li> Once the shopping is done and the items are checked press End shopping, and the bill will be generated automatically in the central billing system.</li>
+<li>Because of the central bill we don’t need to wait in the long queues to scan the products, we need to just pay the bill and unfill the cart.</li>
+</ul>
+
 
 
  
